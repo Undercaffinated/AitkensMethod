@@ -15,7 +15,9 @@ fn main() {
     }
     custom_print("p_n", &p_n);
 
-    // The next most reasonable steps are to generate the rest of the
+
+    // Preparation for Req. 5.2 -----------------------------------------
+    // The most reasonable next steps are to generate the rest of the
     // basic series(es) we will need for the remainder of the project.
     // Here, namely "Delta p_n" and "Delta Squared p_n" which will be
     // named in the code d_pn and d2_pn. These will also be referred to
@@ -23,7 +25,7 @@ fn main() {
     let d_pn: Vec<f64> = difference_series(&p_n);
     let d2_pn: Vec<f64> = difference_series(&d_pn);
 
-    // Ok, look, names suck. And math makes some of the least comprehensible names
+    // Ok, look, names suck. And math generates some of the least comprehensible names
     // of all time. This whole next block is to define "Delta p_n Squared", not to be
     // confused with "Delta Squared p_n". This series is defined as the following:
     // {Delta Squared p_n} = {Delta p_n}^2. We shall use the name d_pn2 to represent
